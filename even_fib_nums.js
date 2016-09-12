@@ -16,18 +16,13 @@ function _sumFibs( maxFibValue ) {
     fibArray.push(a);
     b = a + b;
     fibArray.push(b);
-  }
-  for (let i = 0; i<fibArray.length; i++){
+
     if (fibArray[i]<=maxFibValue){
       if(fibArray[i]%2 === 0){
         sum += fibArray[i];
       }
     }
   }
-
-
-
-
 
   return sum;
 }
